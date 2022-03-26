@@ -34,12 +34,6 @@ def main():
     n = len(dataset)
     distance_matrix = np.zeros((n, n))
 
-    # for i in tqdm(range(n)):
-    #     distances = compute_distances(dataset, distance_matrix, i, n)
-
-    #     for j in range(i+1, n):
-    #         distance_matrix[i, j] = distances[j - i - 1]
-
     distances = Parallel(n_jobs=4)(delayed(compute_distances)(dataset, i, n) for i in tqdm(range(n)))
 
     for i in range(n):
