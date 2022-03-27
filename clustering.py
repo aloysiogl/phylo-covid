@@ -100,7 +100,7 @@ def get_clusters(distance_matrix, dataset, n_clusters=100, min_cluster_size=8):
 
 def get_complete_clustering(distance_matrix, dataset):
     cluster_distance_matrix, considered_clusters, labels = get_clusters(distance_matrix, dataset)
-    clustering = AgglomerativeClustering(distance_threshold=0, n_clusters=None, affinity='precomputed', linkage='average')
+    clustering = AgglomerativeClustering(distance_threshold=0, n_clusters=None, affinity='precomputed', linkage='complete')
     clustering.fit(cluster_distance_matrix)
 
     return clustering, considered_clusters, labels
