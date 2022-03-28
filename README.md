@@ -1,5 +1,10 @@
 # Phylogenetic tree for COVID-19
 
+## Author information
+
+Name: Aloysio GALVAO LOPES
+email: aloysio.galvaolopes@ip-paris.fr
+
 ## Install and run
 
 First of all install the requirements with `pip install -r requirements.txt`
@@ -23,7 +28,7 @@ To produce the final vizualisations simple run all of the `get_XXX.py` scripts.
 
 ## Summary
 
-A full report is present in file `report_AloysiogalvaoLopes.pdf` with all references as well.
+A full report is present in file `report/AloysioGalvaoLopes_report.pdf` with all references as well.
 This project aims at creating a phylogenetic tree based on concepts of algorithmic information.
 More precisely, the normalized compression distance (NCD) is used as base to compute a distance
 matrix thats later used to compute a phylogenetic tree for the coronavirus.
